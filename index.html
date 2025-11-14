@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./input.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="./myimg/Gemini_Generated_Image_s4utb7s4utb7s4ut.png" type="image/x-icon">
@@ -33,13 +34,16 @@
 
 
         <!-- Right -->
-        <div class="flex gap-6 text-gray-700 font-medium">
+        <div class="hidden md:flex gap-6 text-gray-700 font-medium">
           <a href="#abt" class="hover:text-blue-600">ABOUT</a>
           <a href="#skillss" class="hover:text-blue-600">SKILL</a>
           <a href="#wrk" class="hover:text-blue-600">WORKS</a>
           <a href="#contact" class="hover:text-blue-600">CONTACT</a>
           <a href="./CV/Anass (2).pdf" target="_blank" class="rounded-3xl pl-1 text-white bg-blue-500 hover:bg-blue-900 hover:text-black w-32 items-center"><button>DOWNLOAD CV</button></a>
            
+        </div>
+        <div class="md:hidden ">
+          <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
     </header>
@@ -85,11 +89,11 @@
 
     <!-- Skills Section -->
     <section id="skillss" class="bg-white py-12 ">
-      <div class="max-w-5xl mx-auto text-center">
+      <div class=" mx-auto text-center">
         <h2 class="text-3xl font-serif mb-8 text-gray-800">SKILL</h2>
 
         <div class="flex flex-wrap justify-evenly gap-28">
-          <div class="md:h-screen h-auto ">
+          <div class="h-auto ">
             <img
               src="./html logo/html5-day.svg"
               alt="HTML"
@@ -103,7 +107,7 @@
             />
             <p>CSS</p>
           </div>
-          <div class="h-screen">
+          <div class="">
             <img
               src="./html logo/tailwindcss-mark.d52e9897.svg"
               alt="Tailwind CSS"
@@ -120,12 +124,13 @@
         </div>
       </div>
     </section>
-    <div id="wrk" class="flex justify-center font-bold text-5xl">
+    <div></div>
+    <div id="wrk" class="flex justify-center font-bold text-5xl pb-10">
       <h2>WORKS</h2>
     </div>
     <!-- workkkkk section..... -->
     <section
-      class="bg-gray-800 flex flex-col items-center justify-center min-h-screen gap-10"
+      class="bg-gray-800 flex flex-col items-center justify-center  gap-10"
     >
       <img
         src="./projects screnshort/Screenshot 2025-11-12 192852.png"
@@ -214,13 +219,13 @@
       <div class="flex justify-center gap-20 pt-5 bg-gray-50 text-black">
         <div>
           <a href="https://www.linkedin.com/feed/" target="_blank">
-            <img src="./footer img/linkedinblue.svg" class="w-18" alt="" />
+            <img src="./footer img/linkedinblue.svg" class="w-8 md:w-18" alt="" />
             <p class="justify-center flex">LINKEDIN</p>
           </a>
         </div>
         <div>
           <a href="https://github.com/Muhammedanas-kunnath" target="_blank"
-            ><img src="./footer img/github-day.svg" class="w-18" alt="" />
+            ><img src="./footer img/github-day.svg" class="w-8 md:w-18" alt="" />
             <p>GIT-HUB</p></a
           >
         </div>
@@ -230,5 +235,6 @@
       </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/c28836c5fb.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -16,8 +16,5 @@ function sendMail() {
         console.log(res);
         alert("Your message was sent successfully!");
     })
-    .catch(err => {
-        console.log(err);
-        alert("Failed to send message!");
-    });
+    .catch(err => console.log(err));
 }
